@@ -33,13 +33,19 @@
             display: flex;
             flex-direction: column; /* 세로 배열을 위해 column 설정 */
             align-items: center; /* 이미지들이 가운데로 정렬 */
-            gap: 15px;
+            gap: 30px; /* 이미지 간격을 넓게 설정 */
             margin-top: 20px;
         }
         .image-grid img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
+        }
+        .hbd-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff3366; /* HBD 글씨 색상 */
+            margin: 15px 0; /* HBD 간격 조정 */
         }
         footer {
             margin-top: 30px;
@@ -51,7 +57,7 @@
                 font-size: 48px;
             }
             .image-grid img {
-                width: 300px;
+                width: 350px; /* 이미지 크기 키우기 */
             }
         }
     </style>
@@ -62,8 +68,10 @@
         <p>Wishing you joy, love, and happiness on your special day!</p>
         <div class="image-grid">
             <img src="2.gif" alt="Birthday Cake GIF">
-            <img src="3.gif" alt="Celebration GIF">
+            <div class="hbd-text">HBD</div>
             <img src="4.JPG" alt="Party Image">
+            <div class="hbd-text">HBD</div>
+            <img src="3.gif" alt="Celebration GIF">
         </div>
         <footer>🎉 Have a fantastic year ahead! 🎉</footer>
     </div>
