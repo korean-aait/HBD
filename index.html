@@ -8,7 +8,7 @@
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
-            background-color: white; /* 배경을 흰색으로 설정 */
+            background-color: white;
             margin: 0;
             padding: 0;
         }
@@ -29,11 +29,15 @@
             color: #333;
             font-size: 18px;
         }
+        .secret-text {
+            font-size: 14px; /* 텍스트 크기를 줄임 */
+            color: #333; /* 색상 설정 */
+        }
         .image-grid {
             display: flex;
-            flex-direction: column; /* 세로 배열을 위해 column 설정 */
-            align-items: center; /* 이미지들이 가운데로 정렬 */
-            gap: 30px; /* 이미지 간격을 넓게 설정 */
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
             margin-top: 20px;
         }
         .image-grid img {
@@ -44,8 +48,8 @@
         .hbd-text {
             font-size: 24px;
             font-weight: bold;
-            color: #ff3366; /* HBD 글씨 색상 */
-            margin: 15px 0; /* HBD 간격 조정 */
+            color: #ff3366;
+            margin: 15px 0;
         }
         footer {
             margin-top: 30px;
@@ -57,7 +61,7 @@
                 font-size: 48px;
             }
             .image-grid img {
-                width: 700px; /* 이미지 크기 키우기 */
+                width: 350px;
             }
         }
     </style>
@@ -65,10 +69,11 @@
 <body>
     <div class="card">
         <h1>Happy Birthday!</h1>
-        <p>윤서쌤 생일에 맛있는거 많이 드세요. (우영쌤한텐 비밀)</p>
+        <p>👇윤서쌤 생일에 맛있는거 많이 드세요. (대충 많이 먹는 제리짤)</p>
+        <p class="secret-text">우영쌤한텐 비밀</p>
         <div class="image-grid">
             <img src="2.gif" alt="Birthday Cake GIF">
-            <img src="4.JPG" alt="Party Image">
+            <img src="4.JPG" alt="Party Image">            
             <div class="hbd-text">감사합니다!</div>
             <img src="3.gif" alt="Celebration GIF">
         </div>
