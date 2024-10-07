@@ -8,7 +8,7 @@
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
-            background-color: #ffe0e0;
+            background-color: white; /* 배경을 흰색으로 설정 */
             margin: 0;
             padding: 0;
         }
@@ -31,8 +31,8 @@
         }
         .image-grid {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column; /* 세로 배열을 위해 column 설정 */
+            align-items: center; /* 이미지들이 가운데로 정렬 */
             gap: 15px;
             margin-top: 20px;
         }
@@ -51,7 +51,7 @@
                 font-size: 48px;
             }
             .image-grid img {
-                width: 200px;
+                width: 300px;
             }
         }
     </style>
